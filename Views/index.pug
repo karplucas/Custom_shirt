@@ -1,0 +1,12 @@
+extends default
+
+block content
+  div.container
+    each cloth in clothing
+      div.cloth
+        div.cloth-image(style=`background: url('/images/${cloth.imgSrc}') top center
+        no-repeat; background-size: cover;`)
+        h2.cloth-name
+          | #{cloth.name}
+        a(href=`/customize?id=${cloth.id}`)
+          | Customize

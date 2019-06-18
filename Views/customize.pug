@@ -1,0 +1,13 @@
+extends default
+
+block header
+
+block content
+  div.customize
+    div.customize-image(style=`background: url('/images/${cloth.imgSrc}') top center
+    no-repeat; background-size: cover;`)
+    div.customize-details
+      h1.customize-name
+        | #{cloth.name}
+
+  
