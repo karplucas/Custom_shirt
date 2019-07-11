@@ -2,18 +2,21 @@ extends default
 block header
 block content
 
-
   div.customize
-    <script src='/javascripts/client.js'></script>
-    div.customize-image(style=`background: url('/images/${cloth.imgSrc}') top center
-    no-repeat; background-size: cover;`)
+    script(src='/javascripts/client.js')
+    //- div.customize-image(style=`background: url('/images/${cloth.imgSrc_no_mark}') top center
+    //- no-repeat; background-size: cover;`)
+    //- div.customize-image(style=`background: url('/images/${cloth.imgSrc}') top center
+    //- no-repeat; background-size: cover;`)
     div.customize-details
       h1.customize-name
          | #{cloth.name}
       button(onclick='doSomething()') Button 1
-      form(method='post', enctype='multipart/form-data')
-        input(type='file', name='imageupload')
-        input(type='submit', name='uploadimage', value='Upload Image')
+      //- form(method='post', enctype='multipart/form-data')
+      //-   input(type='file', name='imageupload')
+      //-   input(type='submit', name='uploadimage', value='Upload Image')
+  <input type='file' onchange="readURL(this);" />
+  <img id="blah" src="http://placehold.it/180" alt="your image" />  
     
 
     

@@ -1,6 +1,7 @@
 {
   "profiles": [
     {
+      "imgSrc_no_mark": "crew_cut.jpeg",
       "imgSrc": "watermarked.jpeg",
       "name": "Crew Cut T-Shirt",
       "id": "Crew"
